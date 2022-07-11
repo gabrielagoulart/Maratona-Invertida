@@ -93,9 +93,14 @@ body {
 .main_vitrine {
     width: 60%;
     height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 
     font-family: "Poppins", sans-serif;
     color: #ffffff;
+    
 }
 
 .main_card {
@@ -104,6 +109,7 @@ body {
     height: 350px;
 
     background-image: url("assets/imagemCard.png");
+    background-size: cover;
 }
 
 .main_card_top {
