@@ -13,6 +13,7 @@ ul {
 body {
     background-color: #0D0D0D;
     color: #ffffff;
+    padding-bottom: 50px;
 }
 
 main {
@@ -176,23 +177,32 @@ main {
 .main_playlist {
     width: 30%;
     height: 600px;
-    background-color: blue;
+}
+
+.main_playlist h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
 }
 
 .playlist_li {
     display: flex;
     flex-direction: row;
     height: 110px;
-    background-color: aqua;
+    align-items: center;
 }
 
 .playlist_li img {
     height: 95%;
     width: auto;
+    margin-right: 10px;
 }
 
 .playlist_li_center {
-    width: 50%;
+    width: 100%;
 }
 
 .playlist_li_center div h4 {
@@ -209,27 +219,53 @@ main {
 }
 
 .playlist_li_playbutton {
-    height: 50%;
+   height: 50%;
    display: flex;
    flex-direction: row;
    align-items: center; 
+   margin-top: 10px;
 }
 
 .playlist_li_playbutton img {
     height: 30px;
+    margin-right: 10px;
 }
 
 .playlist_li_end {
     width: 25%;
+    height: 100%;
+    display: flex;
 }
 
 .playlist_li_end button {
     height: 30px;
     width: 30px;
+    margin-top: 10px;
 
     background-color: transparent;
     background-image: url("assets/trash-icon.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: none;
+}
+
+/*INTERAÇÃO*/
+.main_nav ul li:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.main_nav ul li:active {
+    background-color: darkgray;
+}
+
+.main_card_bottom span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.playlist_li_end button:hover {
+    cursor: pointer;
 }
